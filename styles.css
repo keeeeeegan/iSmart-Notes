@@ -452,6 +452,11 @@ ul.links li:last-of-type {
     display: none;
 }
 
+.ring {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
 
 
 @media (max-width: 900px) {
@@ -461,6 +466,7 @@ ul.links li:last-of-type {
 
     html {
         margin-top: 60px;
+        background-size: 150%;
     }
 
     .more-info {
@@ -538,23 +544,26 @@ ul.links li:last-of-type {
         left: 0;
         width: 100%;
         margin-top: 0;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        z-index: 10;
     }
 
-
     .separator-bar ul li {
-        margin: 20px 5px 20px 0;
+        margin: 5px 5px 5px 0;
         padding-right: 8px;
     }
 
     .separator-bar ul li:last-of-type {
-        margin: 20px 5px 20px 0;
+        margin: 5px 5px 5px 0;
         padding-right: 0;
     }
 
     nav .h1 {
         margin-bottom: 0;
         padding-bottom: 0;
-        padding-top: 20px;
+        padding-top: 0;
+        padding-bottom: 5px;
     }
 
     .hidden-on-desktop {
@@ -563,6 +572,11 @@ ul.links li:last-of-type {
 
     #top {
         visibility: hidden;
+    }
+
+    .note-about-rsvp {
+        padding-left: var(--main-margin);
+        padding-right: var(--main-margin);
     }
 
 }
