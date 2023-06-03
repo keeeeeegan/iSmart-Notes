@@ -29,17 +29,10 @@
 
 <body>
 
-    <nav>
+    <nav id="top">
         <h1>Chaz &amp; Jessica</h1>
     </nav>
 
-    <!-- <div class="logo-wrapper">
-    <span>Chaz</span>
-    <img src="/img/logo.png" alt="" class="logo" />
-    <span>Jessica</span>
-</div> -->
-
-    <!-- <div class="logo-wrapper"><img src="/img/logo.png" alt="Cockatrice &amp; Raven emblem" class="logo" /></div> -->
     <div class="logo-wrapper">
         <span class="logo-name logo-name-chaz">Chaz</span>
         <img src="/img/cockatrice-raven.svg" alt="Cockatrice &amp; Raven emblem" class="logo" />
@@ -87,7 +80,9 @@
     <p>When RSVP-ing, Please include the names of all the people you will be bringing to the event.</p>
 
     <nav class="separator-bar">
+        <span class="hidden-on-desktop h1">Chaz &amp; Jessica</span>
         <ul>
+            <li><a href="#top" class="hidden-on-desktop">Top</a></li>
             <li><a href="https://www.theknot.com/us/chaz-nugent-and-jessica-porter-oct-2023/rsvp">RSVP</a></li>
             <li><a href="#location">Location</a></li>
             <li><a href="#more">More info</a></li>
@@ -97,7 +92,6 @@
     </nav>
 
     <div class="more-container-ring">
-
         <section class="location-information" id="location">
             <h2 class="please-join">Location</h2>
             <div class="location location-ceremony">
@@ -150,7 +144,7 @@
                 just a quick 10-minute drive from the Chapel. The reception will begin at 5:30PM and
                 food will be served at
                 6:00PM.</p>
-            
+
             <h3>What should I expect after the ceremony?</h3>
             <p>After the ceremony, the immediate family of the couple will be taking pictures for
                 around an hour. Guests can drive over to the reception hall (about 10 minutes away)
@@ -215,8 +209,8 @@
                 out to us with any questions that
                 you may have that we haven&rsquo;t already
                 addressed.</p>
-            
-            
+
+
             <p class="see-you-soon">SEE YOU SOON! 10.07.2023 <span class="heart">❤️</span></p>
 
 
@@ -225,25 +219,24 @@
 
     <div class="more-container-chapel">
         <section class="more-info" id="contact">
-                <h2 class="please-join">Contact Form</h2>
+            <h2 class="please-join">Contact Form</h2>
 
-<div class="contact-form-container">
-    <form   action="https://formspree.io/f/meqwbeay"
-    method="POST" class="contact-form">
-      <div class="input-container">
-        <input placeholder="Name" name="name" id="form_name" required />
-      </div>
-      <div class="input-container">
-        <input placeholder="Email" name="_replyto" id="form_email" required />
-      </div>
-      <div class="input-container">
-        <textarea placeholder="Hello" name="body" id="form_message" required></textarea>
-      </div>
-      <div class="input-container">
-        <input type="submit" class="button submit" value="Submit" />
-      </div>
-    </form>
-  </div>
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/meqwbeay" method="POST" class="contact-form">
+                    <div class="input-container">
+                        <input placeholder="Name" name="name" id="form_name" required />
+                    </div>
+                    <div class="input-container">
+                        <input placeholder="Email" name="_replyto" id="form_email" required />
+                    </div>
+                    <div class="input-container">
+                        <textarea placeholder="Hello" name="body" id="form_message" required></textarea>
+                    </div>
+                    <div class="input-container">
+                        <input type="submit" class="button submit" value="Submit" />
+                    </div>
+                </form>
+            </div>
 
         </section>
     </div>

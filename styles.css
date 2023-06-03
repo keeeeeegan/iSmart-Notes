@@ -93,7 +93,7 @@ nav {
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
-nav h1 {
+nav h1, nav .h1 {
     color: #000;
     font-size: 18px;
     font-style: italic;
@@ -151,7 +151,6 @@ nav ul li:last-of-type {
 .location-title {
     font-family: var(--main-font);
     color: var(--main-font-color);
-    /* text-transform: uppercase; */
     font-style: italic;
     font-size: 26px;
     margin:0;
@@ -268,26 +267,23 @@ a.registry:hover, .button.submit:hover {
 .more-container-ring {
     background: url('/img/holding-hands.jpg');
     background-size: cover;
+    background-position: top center;
     margin: 0;
-    /* padding: var(--main-margin); */
-    padding: calc(var(--main-margin)*2) 0;
+    padding: calc(var(--main-margin)*2) var(--main-margin);
 }
 
 .more-container-chapel {
     background: url('/img/altamonte-chapel-background.jpg');
+    background-position: top center;
     background-size: cover;
     margin: 0;
-    /* padding: var(--main-margin); */
-    padding: calc(var(--main-margin)*2) 0;
+    padding: calc(var(--main-margin)*2) var(--main-margin);
+  
 }
 
 .more-container-ring .location-ceremony {
     margin-top: 0;
 }
-
-/* .more-container-ring .location-ceremony:before {
-    display: none;
-} */
 
 .more-container-ring address {
     margin-bottom: 0;
@@ -350,7 +346,6 @@ ul.links li:last-of-type {
     width: 1000px;
     margin: 0 auto;
     text-align: left;
-    /* margin-top: calc(var(--main-margin) * 3); */
 
 }
 
@@ -374,10 +369,6 @@ ul.links li:last-of-type {
     display:block;
     margin: var(--main-margin) auto;
 }
-
-
-
-/* Specific Title Styles */
 
 .please-join {
     font-style: italic;
@@ -457,21 +448,121 @@ ul.links li:last-of-type {
     font-style: normal;
 }
 
+.hidden-on-desktop {
+    display: none;
+}
+
 
 
 @media (max-width: 900px) {
-    /* body {
-        background-size: 50%;
-        padding-top: inherit;
-        font-size: 85%;
-    } */
+    :root {
+        --main-margin: 30px;
+    }
 
-    /* .hide-on-small-screens {
-        display: none;
-    } */
+    html {
+        margin-top: 60px;
+    }
 
-    /* img {
-        max-width: 80%;
-    } */
+    .more-info {
+        width: auto;
+    }
+
+    .location-wrapper {
+        width: auto;
+    }
+
+    .location-information {
+        width: auto;
+    }
+
+    .big-buttons li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .location-thumb {
+        width: 230px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .location-wrapper {
+        text-align: center;
+    }
+
+    .location-information {
+        text-align: center;
+    }
+
+    .logo-wrapper img {
+        width: 125px;
+    }
+
+    .logo-wrapper .logo-name {
+        width: auto;
+    }
+
+    .logo-wrapper {
+        margin-top: 110px;
+    }
+
+    .please-join {
+        font-size: 30px;
+    }
+
+    .more-info p {
+        line-height: 1.4;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .more-container-ring {
+        background-image: url('/img/pattern-background.jpg');
+        background-size: 150%;
+        margin-top: calc(var(--main-margin) * 2);
+        border-top: solid #6d7b73 1px;
+        border-bottom: solid #6d7b73 1px;
+    }
+
+    .more-container-chapel {
+        background-image: url('/img/pattern-background.jpg');
+        background-size: 150%;
+        border-top: solid #6d7b73 1px;
+        border-bottom: solid #6d7b73 1px;
+    }
+
+    .separator-bar  {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+    .separator-bar ul li {
+        margin: 20px 5px 20px 0;
+        padding-right: 8px;
+    }
+
+    .separator-bar ul li:last-of-type {
+        margin: 20px 5px 20px 0;
+        padding-right: 0;
+    }
+
+    nav .h1 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 20px;
+    }
+
+    .hidden-on-desktop {
+        display: inline-flex;
+    }
+
+    #top {
+        visibility: hidden;
+    }
 
 }
